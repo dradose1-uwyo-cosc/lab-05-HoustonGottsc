@@ -2,7 +2,7 @@
 # UWYO COSC 1010
 # 10/9/24
 # Lab 05 
-# Lab Section: 
+# Lab Section: 15
 # Sources, people worked with, help given to: Koen
 # your
 # comments

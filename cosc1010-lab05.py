@@ -94,19 +94,35 @@ min_temps = [
 # You cannot use in-built functions like max(), min() or sort the lists
 # The use of len() is fine
 # You can do this in two individual loops, or a single loop if you wish 
-
-print(f"Max temp = {max_temp}")
-print(f"Min temp = {min_temp}")
+x = (0)
+for temps in max_temps:
+    if temps>x:
+        x=temps
+y = (0)
+for temps in min_temps:
+    if temps<y:
+        y=temps
+print(f"Max temp = {x}")
+print(f"Min temp = {y}")
 
 # Given the below list 
 numbers = [-61, -76, 94, 21, 97, -4, 21, 56, -26, 9, 100, 56, -7, -32, 60, -68, -25, 3, -10, -83, 63, 0, 13, -99, 87, -46, -88, -71, 4, -99, -15, -12, 72, -1, -20, -90, 32, -36, -59, 83, 78, 52, 43, 55, 12, 16, -37, -5, -98, -53]
 # Count how many positive numbers occur, how many negative numbers occur, and how many times 0 occurs
 # You should print the number and the result within an f-string 
 # Example output: 83 is positive
-
-print(f'There are {pos_count} positive numbers')
-print(f'There are {neg_count} negative numbers')
-print(f"Zero occurred {zero_count} time(s)")
+a = (1)
+b = (0)
+c = (0)
+for digit in numbers:
+    if digit == '0':
+        a += 1
+    elif digit < 0:
+        b += 1
+    else:
+        c += 1
+print(f"Zero occurrs {a} time")
+print (f"Negative numbers occurred {b} times")
+print (f"Positive numbers occurred {c} times")
 # Given the same numbers list, give the sum of all positive numbers, and the sum of all negative numbers
 # This should be done within a single loop
 
